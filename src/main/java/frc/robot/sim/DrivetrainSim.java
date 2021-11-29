@@ -37,7 +37,7 @@ public class DrivetrainSim {
     // Configure these to match your drivetrain's physical dimensions
     // and characterization results.
     LinearSystem<N2, N2, N2> drivetrainSystem =
-            LinearSystemId.identifyDrivetrainSystem(1.3, 0.2, 1.5, 0.3);
+            LinearSystemId.identifyDrivetrainSystem(1, 0.2, 1.5, 0.3);
     DifferentialDrivetrainSim drivetrainSimulator =
             new DifferentialDrivetrainSim(
                     drivetrainSystem,
